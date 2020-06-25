@@ -1,172 +1,583 @@
 {
-  "type": [
+  "AR": [
     {
-      "AR": [
-        {"series": "ATOM", "name": ["AARS-15"]},
-        {"series": "AUTUMN", "name": []},
-        {"series": "AWD", "name": ["CQR2000", "DMR-17"]},
-        {"series": "C_TRACE", "name": []},
-        {"series": "CARBON", "name": ["A500"]},
-        {"series": "CHROME", "name": ["AC30", "FMBOBCAT"]},
-        {"series": "CINNABAR", "name": []},
-        {"series": "DRAGON", "name": []},
-        {"series": "HADRON", "name": ["SMR16"]},
-        {"series": "JADE", "name": ["FMBOBCAT"]},
-        {"series": "JESTER", "name": []},
-        {"series": "NCR", "name": []},
-        {"series": "NORMAL", "name": []},
-        {"series": "OWL", "name": []},
-        {"series": "PANTHER", "name": ["CQR2000"]},
-        {"series": "PATRIOT", "name": []},
-        {"series": "SHAMROCK", "name": []},
-        {"series": "THREAT", "name": []},
-        {"series": "VETERAN", "name": ["AG10"]},
-        {"series": "WINTER","name": []}
+      "series": "ATOM",
+      "name": ["AARS-15"]
+    },
+    {
+      "series": "AUTUMN",
+      "name": []
+    },
+    {
+      "series": "AWD",
+      "name": ["CQR2000", "DMR-17"]
+    },
+    {
+      "series": "C_TRACE",
+      "name": []
+    },
+    {
+      "series": "CARBON",
+      "name": ["A500"]
+    },
+    {
+      "series": "CHROME",
+      "name": ["AC30","FMBOBCAT"]
+    },
+    {
+      "series": "CINNABAR",
+      "name": []
+    },
+    {
+      "series": "DRAGON",
+      "name": []
+    },
+    {
+      "series": "HADRON",
+      "name": ["SMR16"]
+    },
+    {
+      "series": "JADE",
+      "name": ["FMBOBCAT"]
+    },
+    {
+      "series": "JESTER",
+      "name": []
+    },
+    {
+      "series": "NCR",
+      "name": []
+    },
+    {
+      "series": "NORMAL",
+      "name": []
+    },
+    {
+      "series": "OWL",
+      "name": []
+    },
+    {
+      "series": "PANTHER",
+      "name": ["CQR2000"]
+    },
+    {
+      "series": "PATRIOT",
+      "name": []
+    },
+    {
+      "series": "SHAMROCK",
+      "name": []
+    },
+    {
+      "series": "THREAT",
+      "name": []
+    },
+    {
+      "series": "VETERAN",
+      "name": ["AG10"]
+    },
+    {
+      "series": "WINTER",
+      "name": []
+    }
+  ],
+  "HG": [
+    {
+      "series": "ATOM",
+      "name": []
+    },
+    {
+      "series": "AUTUMN",
+      "name": []
+    },
+    {
+      "series": "AWD",
+      "name": []
+    },
+    {
+      "series": "C_TRACE",
+      "name": []
+    },
+    {
+      "series": "CARBON",
+      "name": []
+    },
+    {
+      "series": "CHROME",
+      "name": []
+    },
+    {
+      "series": "CINNABAR",
+      "name": []
+    },
+    {
+      "series": "DRAGON",
+      "name": []
+    },
+    {
+      "series": "HADRON",
+      "name": []
+    },
+    {
+      "series": "JADE",
+      "name": []
+    },
+    {
+      "series": "JESTER",
+      "name": ["SMILEY-9"]
+    },
+    {
+      "series": "NCR",
+      "name": []
+    },
+    {
+      "series": "NORMAL",
+      "name": []
+    },
+    {
+      "series": "OWL",
+      "name": []
+    },
+    {
+      "series": "PANTHER",
+      "name": []
+    },
+    {
+      "series": "PATRIOT",
+      "name": []
+    },
+    {
+      "series": "SHAMROCK",
+      "name": []
+    },
+    {
+      "series": "THREAT",
+      "name": []
+    },
+    {
+      "series": "VETERAN",
+      "name": []
+    },
+    {
+      "series": "WINTER",
+      "name": []
+    }
+  ],
+  "LC": [
+    {
+      "series": "ATOM",
+      "name": []
+    },
+    {
+      "series": "AUTUMN",
+      "name": []
+    },
+    {
+      "series": "AWD",
+      "name": []
+    },
+    {
+      "series": "C_TRACE",
+      "name": []
+    },
+    {
+      "series": "CARBON",
+      "name": []
+    },
+    {
+      "series": "CHROME",
+      "name": []
+    },
+    {
+      "series": "CINNABAR",
+      "name": []
+    },
+    {
+      "series": "DRAGON",
+      "name": []
+    },
+    {
+      "series": "HADRON",
+      "name": []
+    },
+    {
+      "series": "JADE",
+      "name": []
+    },
+    {
+      "series": "JESTER",
+      "name": []
+    },
+    {
+      "series": "NCR",
+      "name": []
+    },
+    {
+      "series": "NORMAL",
+      "name": []
+    },
+    {
+      "series": "OWL",
+      "name": []
+    },
+    {
+      "series": "PANTHER",
+      "name": []
+    },
+    {
+      "series": "PATRIOT",
+      "name": []
+    },
+    {
+      "series": "SHAMROCK",
+      "name": []
+    },
+    {
+      "series": "THREAT",
+      "name": []
+    },
+    {
+      "series": "VETERAN",
+      "name": []
+    },
+    {
+      "series": "WINTER",
+      "name": []
+    }
+  ],
+  "LMG": [
+    {
+      "series": "ATOM",
+      "name": []
+    },
+    {
+      "series": "AUTUMN",
+      "name": []
+    },
+    {
+      "series": "AWD",
+      "name": ["HMG24"]
+    },
+    {
+      "series": "C_TRACE",
+      "name": []
+    },
+    {
+      "series": "CARBON",
+      "name": ["ACL-08"]
+    },
+    {
+      "series": "CHROME",
+      "name": []
+    },
+    {
+      "series": "CINNABAR",
+      "name": []
+    },
+    {
+      "series": "DRAGON",
+      "name": []
+    },
+    {
+      "series": "HADRON",
+      "name": ["KPK"]
+    },
+    {
+      "series": "JADE",
+      "name": []
+    },
+    {
+      "series": "JESTER",
+      "name": ["LM-JOKE"]
+    },
+    {
+      "series": "NCR",
+      "name": []
+    },
+    {
+      "series": "NORMAL",
+      "name": []
+    },
+    {
+      "series": "OWL",
+      "name": []
+    },
+    {
+      "series": "PANTHER",
+      "name": []
+    },
+    {
+      "series": "PATRIOT",
+      "name": ["M-461e"]
+    },
+    {
+      "series": "SHAMROCK",
+      "name": ["AGK-37"]
+    },
+    {
+      "series": "THREAT",
+      "name": []
+    },
+    {
+      "series": "VETERAN",
+      "name": ["AGK-37"]
+    },
+    {
+      "series": "WINTER",
+      "name": []
+    }
+  ],
+  "SG": [
+    {
+      "series": "ATOM",
+      "name": []
+    },
+    {
+      "series": "AUTUMN",
+      "name": []
+    },
+    {
+      "series": "AWD",
+      "name": []
+    },
+    {
+      "series": "C_TRACE",
+      "name": []
+    },
+    {
+      "series": "CARBON",
+      "name": []
+    },
+    {
+      "series": "CHROME",
+      "name": []
+    },
+    {
+      "series": "CINNABAR",
+      "name": ["DS-117"]
+    },
+    {
+      "series": "DRAGON",
+      "name": []
+    },
+    {
+      "series": "HADRON",
+      "name": []
+    },
+    {
+      "series": "JADE",
+      "name": [
+        "DS-117"
       ]
     },
     {
-      "HG": [
-        {"series": "ATOM", "name": []},
-        {"series": "AUTUMN", "name": []},
-        {"series": "AWD", "name": []},
-        {"series": "C_TRACE", "name": []},
-        {"series": "CARBON", "name": []},
-        {"series": "CHROME", "name": []},
-        {"series": "CINNABAR", "name": []},
-        {"series": "DRAGON", "name": []},
-        {"series": "HADRON", "name": []},
-        {"series": "JADE", "name": []},
-        {"series": "JESTER", "name": ["SMILEY-9"]},
-        {"series": "NCR", "name": []},
-        {"series": "NORMAL", "name": []},
-        {"series": "OWL", "name": []},
-        {"series": "PANTHER", "name": []},
-        {"series": "PATRIOT", "name": []},
-        {"series": "SHAMROCK", "name": []},
-        {"series": "THREAT", "name": []},
-        {"series": "VETERAN", "name": []},
-        {"series": "WINTER","name": []}
+      "series": "JESTER",
+      "name": []
+    },
+    {
+      "series": "NCR",
+      "name": []
+    },
+    {
+      "series": "NORMAL",
+      "name": [
+        "KBS-4YETI",
+        "WARLANDER"
       ]
     },
     {
-      "LC": [
-        {"series": "ATOM", "name": []},
-        {"series": "AUTUMN", "name": []},
-        {"series": "AWD", "name": []},
-        {"series": "C_TRACE", "name": []},
-        {"series": "CARBON", "name": []},
-        {"series": "CHROME", "name": []},
-        {"series": "CINNABAR", "name": []},
-        {"series": "DRAGON", "name": []},
-        {"series": "HADRON", "name": []},
-        {"series": "JADE", "name": []},
-        {"series": "JESTER", "name": []},
-        {"series": "NCR", "name": []},
-        {"series": "NORMAL", "name": []},
-        {"series": "OWL", "name": []},
-        {"series": "PANTHER", "name": []},
-        {"series": "PATRIOT", "name": []},
-        {"series": "SHAMROCK", "name": []},
-        {"series": "THREAT", "name": []},
-        {"series": "VETERAN", "name": []},
-        {"series": "WINTER","name": []}
+      "series": "OWL",
+      "name": []
+    },
+    {
+      "series": "PANTHER",
+      "name": []
+    },
+    {
+      "series": "PATRIOT",
+      "name": []
+    },
+    {
+      "series": "SHAMROCK",
+      "name": []
+    },
+    {
+      "series": "THREAT",
+      "name": []
+    },
+    {
+      "series": "VETERAN",
+      "name": []
+    },
+    {
+      "series": "WINTER",
+      "name": []
+    }
+  ],
+  "SMG": [
+    {
+      "series": "ATOM",
+      "name": []
+    },
+    {
+      "series": "AUTUMN",
+      "name": []
+    },
+    {
+      "series": "AWD",
+      "name": ["S-T3C", "UNKCQB"]
+    },
+    {
+      "series": "C_TRACE",
+      "name": []
+    },
+    {
+      "series": "CARBON",
+      "name": []
+    },
+    {
+      "series": "CHROME",
+      "name": []
+    },
+    {
+      "series": "CINNABAR",
+      "name": ["NOX-K"]
+    },
+    {
+      "series": "DRAGON",
+      "name": ["NOX-K", "PPM19", "UNKCQB"]
+    },
+    {
+      "series": "HADRON",
+      "name": []
+    },
+    {
+      "series": "JADE",
+      "name": [
+        "NOX-K"
       ]
     },
     {
-      "LMG": [
-        {"series": "ATOM", "name": []},
-        {"series": "AUTUMN", "name": []},
-        {"series": "AWD", "name": ["HMG24"]},
-        {"series": "C_TRACE", "name": []},
-        {"series": "CARBON", "name": ["ACL-08"]},
-        {"series": "CHROME", "name": []},
-        {"series": "CINNABAR", "name": []},
-        {"series": "DRAGON", "name": []},
-        {"series": "HADRON", "name": ["KPK"]},
-        {"series": "JADE", "name": []},
-        {"series": "JESTER", "name": ["LM-JOKE"]},
-        {"series": "NCR", "name": []},
-        {"series": "NORMAL", "name": []},
-        {"series": "OWL", "name": []},
-        {"series": "PANTHER", "name": []},
-        {"series": "PATRIOT", "name": ["M-461e"]},
-        {"series": "SHAMROCK", "name": ["AGK-37"]},
-        {"series": "THREAT", "name": []},
-        {"series": "VETERAN", "name": ["AGK-37"]},
-        {"series": "WINTER","name": []}
-      ]
+      "series": "JESTER",
+      "name": []
     },
     {
-      "SG": [
-        {"series": "ATOM", "name": []},
-        {"series": "AUTUMN", "name": []},
-        {"series": "AWD", "name": []},
-        {"series": "C_TRACE", "name": []},
-        {"series": "CARBON", "name": []},
-        {"series": "CHROME", "name": []},
-        {"series": "CINNABAR", "name": ["DS-117"]},
-        {"series": "DRAGON", "name": []},
-        {"series": "HADRON", "name": []},
-        {"series": "JADE", "name": ["DS-117"]},
-        {"series": "JESTER", "name": []},
-        {"series": "NCR", "name": []},
-        {"series": "NORMAL", "name": ["KBS-4YETI", "WARLANDER"]},
-        {"series": "OWL", "name": []},
-        {"series": "PANTHER", "name": []},
-        {"series": "PATRIOT", "name": []},
-        {"series": "SHAMROCK", "name": []},
-        {"series": "THREAT", "name": []},
-        {"series": "VETERAN", "name": []},
-        {"series": "WINTER","name": []}
-      ]
+      "series": "NCR",
+      "name": []
     },
     {
-      "SMG": [
-        {"series": "ATOM", "name": []},
-        {"series": "AUTUMN", "name": []},
-        {"series": "AWD", "name": ["S-T3C", "UNKCQB"]},
-        {"series": "C_TRACE", "name": []},
-        {"series": "CARBON", "name": []},
-        {"series": "CHROME", "name": []},
-        {"series": "CINNABAR", "name": ["NOX-K"]},
-        {"series": "DRAGON", "name": ["NOX-K", "PPM19", "UNKCQB"]},
-        {"series": "HADRON", "name": []},
-        {"series": "JADE", "name": ["NOX-K"]},
-        {"series": "JESTER", "name": []},
-        {"series": "NCR", "name": []},
-        {"series": "NORMAL", "name": []},
-        {"series": "OWL", "name": ["UNKCQB"]},
-        {"series": "PANTHER", "name": []},
-        {"series": "PATRIOT", "name": []},
-        {"series": "SHAMROCK", "name": ["IZU-G"]},
-        {"series": "THREAT", "name": []},
-        {"series": "VETERAN", "name": []},
-        {"series": "WINTER","name": []}
-      ]
+      "series": "NORMAL",
+      "name": []
     },
     {
-      "SR": [
-        {"series": "ATOM", "name": ["MAVERICKLA1"]},
-        {"series": "AUTUMN", "name": []},
-        {"series": "AWD", "name": ["ATALANTA"]},
-        {"series": "C_TRACE", "name": ["RS300"]},
-        {"series": "CARBON", "name": []},
-        {"series": "CHROME", "name": []},
-        {"series": "CINNABAR", "name": ["MKM550", "STRIKER50"]},
-        {"series": "DRAGON", "name": ["MKM550", "STRIKER50"]},
-        {"series": "HADRON", "name": []},
-        {"series": "JADE", "name": []},
-        {"series": "JESTER", "name": []},
-        {"series": "NCR", "name": []},
-        {"series": "NORMAL", "name": ["BTT50", "M32"]},
-        {"series": "OWL", "name": []},
-        {"series": "PANTHER", "name": []},
-        {"series": "PATRIOT", "name": ["RS300"]},
-        {"series": "SHAMROCK", "name": []},
-        {"series": "THREAT", "name": []},
-        {"series": "VETERAN", "name": []},
-        {"series": "WINTER","name": ["BTT50"]}
-      ]
+      "series": "OWL",
+      "name": ["UNKCQB"]
+    },
+    {
+      "series": "PANTHER",
+      "name": []
+    },
+    {
+      "series": "PATRIOT",
+      "name": []
+    },
+    {
+      "series": "SHAMROCK",
+      "name": ["IZU-G"]
+    },
+    {
+      "series": "THREAT",
+      "name": []
+    },
+    {
+      "series": "VETERAN",
+      "name": []
+    },
+    {
+      "series": "WINTER",
+      "name": []
+    }
+  ],
+  "SR": [
+    {
+      "series": "ATOM",
+      "name": ["MAVERICKLA1"]
+    },
+    {
+      "series": "AUTUMN",
+      "name": []
+    },
+    {
+      "series": "AWD",
+      "name": ["ATALANTA"]
+    },
+    {
+      "series": "C_TRACE",
+      "name": ["RS300"]
+    },
+    {
+      "series": "CARBON",
+      "name": []
+    },
+    {
+      "series": "CHROME",
+      "name": []
+    },
+    {
+      "series": "CINNABAR",
+      "name": ["MKM550", "STRIKER50"]
+    },
+    {
+      "series": "DRAGON",
+      "name": ["MKM550", "STRIKER50"]
+    },
+    {
+      "series": "HADRON",
+      "name": []
+    },
+    {
+      "series": "JADE",
+      "name": []
+    },
+    {
+      "series": "JESTER",
+      "name": []
+    },
+    {
+      "series": "NCR",
+      "name": []
+    },
+    {
+      "series": "NORMAL",
+      "name": ["BTT50", "M32"]
+    },
+    {
+      "series": "OWL",
+      "name": []
+    },
+    {
+      "series": "PANTHER",
+      "name": []
+    },
+    {
+      "series": "PATRIOT",
+      "name": ["RS300"]
+    },
+    {
+      "series": "SHAMROCK",
+      "name": []
+    },
+    {
+      "series": "THREAT",
+      "name": []
+    },
+    {
+      "series": "VETERAN",
+      "name": []
+    },
+    {
+      "series": "WINTER",
+      "name": ["BTT50"]
     }
   ]
 }
