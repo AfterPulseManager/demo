@@ -1,22 +1,22 @@
     function test01(){ 
-
-        var imgArray = new Array();
-
         $(function(){
           $.getJSON("json/weapons.json", function(typeObj){
             $.each(typeObj, function(typeKey, seriesObj) {
-              if (typeKey == "AR"){
+              console.log("typeKey");
+              console.log(typeKey);
+              if (typeKey == "SR"){
                 $.each(seriesObj, function(seriesKey, nameObj) {
-                  if (seriesKey == "CHROME"){
-                    imgFile= nameObj.name;
+                  console.log("seriesKeyKey");
+                  console.log(seriesKey);
+                  if (seriesKey == "NORMAL"){
+                    console.log("–ß‚è’l");
+                    console.log(nameObj.name);
                   }
                 });
               }
             });
           });
         });
-        
-        alert(imgArray[0]);
     }
     
         function test02(){
