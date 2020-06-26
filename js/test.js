@@ -1,17 +1,22 @@
-    function test01(){
-    
-        alert("s");
-    
+    function test01(){ 
+
+        var imgArray = new Array();
+
         $(function(){
-          $.getJSON("json/weapons.json", function(jsonData){
-            var arr = [];
-            $.each(jsonData, function(i, typeObj) {
-              alert(typeObj[i]);
-            })
+          $.getJSON("json/weapons.json", function(typeObj){
+            $.each(typeObj, function(typeKey, seriesObj) {
+              if (typeKey == "AR"){
+                $.each(seriesObj, function(seriesKey, nameObj) {
+                  if (seriesKey == "CHROME"){
+                    imgFile= nameObj.name;
+                  }
+                });
+              }
+            });
           });
         });
         
-        alert("e");
+        alert(imgArray[0]);
     }
     
         function test02(){
