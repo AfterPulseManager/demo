@@ -10,33 +10,36 @@
       var dir_series = document.getElementById("series").value;
       var dir_rank = document.getElementById("rank").value;
       var dir_type = document.getElementById("type").value;
+      var dir_base = "./images/weapons/"+dir_type+"/"+dir_series+"/";
+      var extension = ".jpg";
       
       if(dir_type == "ZERO"){
         alert("武器種類を選択してください。");
       }else{
       
         var imgFile = checkFile(dir_series, dir_type);
+        console.log(imgFile[0]);
         
         if(Object.keys(imgFile).length == 0) {
           document.getElementById("image").style.visibility = "visible";
           document.getElementById("next").disabled = "true";
           document.getElementById("back").disabled = "true";
-          document.getElementById("image").src = "images/000.jpg";
-          document.getElementById("bigImage").href = "images/000.jpg";
+          document.getElementById("image").src = "./images/weapons/noImage/"+extension;
+          document.getElementById("bigImage").href = "./images/weapons/noImage/"+extension;
     
         }else if(Object.keys(imgFile).length == 1){
           document.getElementById("image").style.visibility = "visible";
           document.getElementById("next").disabled = "true";
           document.getElementById("back").disabled = "true";
-          document.getElementById("image").src = "./images/"+dir_type+"/"+dir_series+"/001.jpg";
-          document.getElementById("bigImage").href = "./images/"+dir_type+"/"+dir_series+"/001.jpg";
+          document.getElementById("image").src = dir_base+imgFile[0]+dir_rank+extension;
+          document.getElementById("bigImage").href = dir_base+imgFile[0]+dir_rank+extension;
           
         }else{
           document.getElementById("image").style.visibility = "visible";
           document.getElementById("next").disabled = "";
           document.getElementById("back").disabled = "true";
-          document.getElementById("image").src = "./images/"+dir_type+"/"+dir_series+"/001.jpg";
-          document.getElementById("bigImage").href = "./images/"+dir_type+"/"+dir_series+"/001.jpg";
+          document.getElementById("image").src = dir_base+imgFile[0]+dir_rank+extension;
+          document.getElementById("bigImage").href = dir_base+imgFile[0]+dir_rank+extension;
         }
         
         document.getElementById("series").setAttribute("disabled", true);
@@ -50,7 +53,7 @@
       var dir_rank = document.getElementById("rank").value;
       var dir_type = document.getElementById("type").value;
       
-      var dir_base = "./images/"+dir_type+"/"+dir_series+"/";
+      var dir_base = "./images/weapons/"+dir_type+"/"+dir_series+"/";
       
       var extension = ".jpg";
       
@@ -76,26 +79,21 @@
       }
     }
     
-    function checkFile(dir_series, dir_type){
-        
-        var imgFile =
-        $(function(){
-          var imgObj = [];
-          $.getJSON("json/weapons.json", function(typeObj){
-            $.each(typeObj, function(typeKey, seriesObj) {
-              if (typeKey == dir_type){
-                $.each(seriesObj, function(seriesKey, nameObj) {
-                  if (seriesKey == dir_series){
-                    imgObj.push(nameObj.name);
-                    console.log(nameObj.name);
-                  }
-                });
-              }
-            });
+    $(function checkFile(dir_series, dir_type){
+        var imgObj = [];
+        $.getJSON("json/weapons.json", function(typeObj){
+          $.each(typeObj, function(typeKey, seriesObj) {
+            if (typeKey == dir_type){
+              $.each(seriesObj, function(seriesKey, nameObj) {
+                if (seriesKey == dir_series){
+                  imgObj.push(nameObj.name);
+                  console.log(nameObj.name);
+                }
+              });
+            }
           });
+        });
+          console.log(imgObj);     
           return imgObj;
-        });;
-
-        return imgFile;
-    }
+    });;
     
