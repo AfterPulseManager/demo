@@ -79,7 +79,7 @@
       }
     }
     
-    $(function checkFile(dir_series, dir_type){
+   function checkFile(dir_series, dir_type){
         var imgObj = [];
         $.getJSON("json/weapons.json", function(typeObj){
           $.each(typeObj, function(typeKey, seriesObj) {
@@ -95,5 +95,5 @@
         });
           console.log(imgObj);     
           return imgObj;
-    });;
+   }
     
