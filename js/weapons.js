@@ -80,20 +80,24 @@
     }
     
    function checkFile(dir_series, dir_type){
-        var imgObj = [];
-        $.getJSON("json/weapons.json", function(typeObj){
-          $.each(typeObj, function(typeKey, seriesObj) {
-            if (typeKey == dir_type){
-              $.each(seriesObj, function(seriesKey, nameObj) {
-                if (seriesKey == dir_series){
-                  imgObj.push(nameObj.name);
-                  console.log(nameObj.name);
-                }
-              });
+       var imgObj = new Array();
+       
+       $.ajaxSetup({async: false});
+       $.getJSON("json/weapons.json", function(weapons){
+          for (var type in weapons) {
+            if (type ==  dir_type){
+              for (var series in weapons[type]){
+                if (series == dir_series){
+                  for (i=0; i < weapons[type][series].name.length; i++){
+                    imgObj.push(weapons[type][series].name[i]);
+                  }
+                }                  
+              }              
             }
-          });
+          }
         });
-          console.log(imgObj);     
-          return imgObj;
+        $.ajaxSetup({async: true});
+        
+        return imgObj;
    }
     
