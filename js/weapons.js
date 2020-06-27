@@ -77,18 +77,25 @@
     }
     
     function checkFile(dir_series, dir_type){
+        
+        var imgFile =
         $(function(){
+          var imgObj = [];
           $.getJSON("json/weapons.json", function(typeObj){
             $.each(typeObj, function(typeKey, seriesObj) {
               if (typeKey == dir_type){
                 $.each(seriesObj, function(seriesKey, nameObj) {
                   if (seriesKey == dir_series){
-                    return nameObj.name;
+                    imgObj.push(nameObj.name);
+                    console.log(nameObj.name);
                   }
                 });
               }
             });
           });
-        });
+          return imgObj;
+        });;
+
+        return imgFile;
     }
     
